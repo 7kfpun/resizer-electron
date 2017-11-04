@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!--meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"-->
+    <title>7pupu Image Resizer</title>
+    <link rel="stylesheet" type="text/css" href="build/style.css">
+    <script>
+      window.node = window.require;
+    </script>
+  </head>
+  <body>
+    <div class="main">
+      <a href="#"><div id="putimg" class="putimg"><img src="build/upload-cloud.svg"><p>Drag or Upload<br>your 4X images</p></div></a>
+      <div class="type">
+        <button id="android" class="android"><img src="build/android.svg" /></button>
+        <button id="ios" class="ios"><img src="build/ios.svg" /></button>
+      </div>
+      <div class="position"><div class="title"><img src="build/folder-open.svg"></div> <span id="directory" class="truncate" data="~/Desktop">~/Desktop</span><button id="change-directory">change</button></div>
+      <div id="download" class="download"><button class="btn">Yeah get my file(s)</button></div>
+    </div>
+    <script src="build/renderer.js"></script>
+  </body>
+</html>

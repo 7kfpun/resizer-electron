@@ -1,0 +1,68 @@
+@charset "UTF-8";
+:root{
+  --color-main: #7562d9;
+  --color-darkmain: #5a4ba6;
+  --color-lightgray: #e6ecf2;
+  --color-darkgray: #adc3d9;
+  --font-m: 20px;
+}
+
+body,html { height:100%; width:100%; margin:0px; padding:0px; -webkit-text-size-adjust: 100%; }
+body{
+  font-family:'Roboto Slab','Roboto', 'Noto Sans TC', Helvetica, Arial, Microsoft Yahei, SimSun, STXihei, arial, sans-serif;
+  margin: 0;
+  color: #333333;
+  font-size: 16px ;
+  background-color: #fafafa;
+  word-wrap: break-word;
+  -webkit-text-size-adjust: none;
+}
+*, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+button:focus { outline:0; }
+img{ border: 0; vertical-align: middle; height: auto; }
+a{ text-decoration: none; color: #333333; }
+a:hover,a:focus { text-decoration: none;}
+
+.main{ width: 400px; margin: 30px auto; background-color:; }
+.putimg{ padding: 20px; border-radius: 20px; text-align: center; border: 5px dotted var( --color-darkgray ); background-color: var( --color-lightgray ); }
+.putimg p{ margin: 10px 0; line-height: 1.8; font-size: var( --font-m ); color: var( --color-main ); }
+.putimg img{ display: block; margin: 10px auto; }
+
+.type{ text-align: center; }
+.type button{ width: 100px; height: 100px; position: relative; margin: 40px 20px 0; border-radius: 100px; border: none; }
+.type button:hover img{ opacity: 1; animation: bounce 1s ease-out; }
+
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40%,80% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+.type .android{ background-color: #6CB24A; }
+.type .ios{ background-color: #444444; }
+.type .none{ background-color: #cccccc; }
+.type .none img{ opacity: 0.6; }
+
+.truncate {
+  width: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.position{  margin: 40px 0 0; position: relative; border-radius: 10px; background-color: var( --color-lightgray ); }
+.position .title{ display: inline-block; padding: 10px 15px 10px 20px; border-radius: 10px 0 0 10px; background-color: var( --color-darkgray ); }
+.position span{ padding: 10px; color: #333333;}
+.position button{ position: absolute; right: 8px; padding: 6px 15px; top:50%; transform:translateY(-50%); border-radius: 8px; border: none; font-size: var( --font-m ); font-weight: normal;color: #ffffff; background-color: var( --color-main ); }
+.position button{ background-color: #ffffff; color: var( --color-main ); border: 2px solid var( --color-main ); }
+.position button:hover{ background-color: var( --color-main ); color: #ffffff; }
+.download{ margin: 40px 0 0; }
+.download .btn{ display: block; width: 100%; padding:; border-radius: 10px; border: none; line-height: 50px; font-size: var( --font-m ); color: #ffffff; background-color: var( --color-main ); }
+.download .btn:hover{ background-color: var( --color-darkmain );}

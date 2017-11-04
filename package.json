@@ -1,0 +1,46 @@
+{
+  "name": "resizer-electron",
+  "version": "1.0.0",
+  "description": "An Image Resizer Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "build": {
+    "appId": "com.kfpun.resizer",
+    "mac": {
+      "category": "Tool"
+    },
+    "files": [
+      "build/",
+      "node_modules/",
+      "index.html",
+      "main.js",
+      "package.json"
+    ]
+  },
+  "repository": "https://github.com/7kfpun/resizer-electron",
+  "bugs": {
+    "url": "https://github.com/7kfpun/resizer-electron/issues"
+  },
+  "keywords": [
+    "Electron",
+    "image",
+    "resizer"
+  ],
+  "author": "kf",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "~1.7.8",
+    "electron-builder": "^19.43.4"
+  },
+  "dependencies": {
+    "electron-drag-drop": "^1.1.0",
+    "mkdirp": "^0.5.1",
+    "path-exists": "^3.0.0",
+    "pify": "^3.0.0"
+  }
+}
