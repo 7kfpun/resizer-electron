@@ -27,10 +27,11 @@
     "url": "https://github.com/7kfpun/resizer-electron/issues"
   },
   "keywords": [
-    "Electron",
+    "electron",
     "image",
     "resizer"
   ],
+  "homepage": "https://github.com/7kfpun/resizer-electron#readme",
   "author": "kf",
   "license": "MIT",
   "devDependencies": {

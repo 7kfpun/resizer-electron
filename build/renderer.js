@@ -137,6 +137,35 @@ openFileElement.addEventListener('click', function() {
   });
 });
 
+openFileElement.ondragover = () => {
+  console.log('ondragover');
+  openFileElement.classList.add('putimg__drop');
+  return false;
+};
+
+openFileElement.ondragleave = () => {
+  console.log('ondragleave');
+  openFileElement.classList.remove('putimg__drop');
+  return false;
+};
+
+openFileElement.ondragend = () => {
+  console.log('ondragend');
+  return false;
+};
+
+openFileElement.ondrop = (e) => {
+  e.preventDefault();
+
+  console.log(e.dataTransfer.files);
+  selectedFiles = [...e.dataTransfer.files]
+    .filter(file => file.type === 'image/png' || file.type === 'image/jpeg')
+    .map(file => file.path);
+  console.log(selectedFiles);
+
+  return false;
+};
+
 
 const generateElement = document.getElementById('download');
 generateElement.addEventListener('click', function() {
